@@ -8,3 +8,29 @@
     --color-btn: #E5A000;
     /* --border: 0.1rem solid rgba(255,255,255, 0.3); */
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+/* cabeçalho */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--main-color);
+    justify-content: space-around;
+}
+
+.header img {
+    max-width: 100%;
+    width: 15rem;
+}
