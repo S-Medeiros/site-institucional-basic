@@ -108,6 +108,7 @@ li {
   margin: auto;
   position: relative;
   overflow: hidden; /* Ocultar partes das imagens que ultrapassam o tamanho */
+  
 }
 
 .slider li {
