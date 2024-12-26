@@ -103,22 +103,25 @@ li {
 
 .slider {
   display: flex;
-  height: 540px;
-  width: 100%;
+  height: 540px; /* Altura fixa do carrossel */
+  width: 100%; 
   margin: auto;
   position: relative;
-
+  overflow: hidden; /* Ocultar partes das imagens que ultrapassam o tamanho */
 }
 
 .slider li {
   list-style: none;
   position: absolute;
+  width: 100%; /* Largura das imagens ajustada ao tamanho do carrossel */
+  height: 100%; 
 }
 
 .slider img {
-  margin: auto;
-  height: 100%;
-  width: 100%;
+  margin: 0; /* Remover margens para evitar problemas de dimensionamento */
+  height: 100%; 
+  width: 100%; 
+  object-fit: cover; /* Manter proporções e cobrir toda a área do carrossel */
   vertical-align: top;
 }
 
