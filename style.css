@@ -130,27 +130,26 @@ li {
 }
 
 .slider label {
-  background-color: #000;
-  border-radius: 50%;
+  background-color: #fff;
   bottom: 1rem;
   cursor: pointer;
   display: block;
-  height: 1rem;
+  height: 0.8rem;
   position: absolute;
-  width: 1rem;
+  width: 4rem;
   z-index: 10;
 }
 
 .slider li:nth-child(1) label {
-  left: 10px;
+  left: 900px;
 }
 
 .slider li:nth-child(2) label {
-  left: 40px;
+  left: 950px;
 }
 
 .slider li:nth-child(3) label {
-  left: 70px;
+  left: 1000px;
 }
 
 .slider img {
@@ -163,6 +162,9 @@ li {
   opacity: 1;
   visibility: visible;
   z-index: 10;
+}
+.slider li input:checked + label {
+  background-color: var(--color-btn);
 }
 
 /* MIDIA QUERY */
