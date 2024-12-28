@@ -24,6 +24,9 @@ li {
     list-style: none;
 }
 
+.secao {
+  width: rem;
+}
 
 /* cabeçalho */
 .header {
@@ -104,68 +107,75 @@ li {
 .slider {
   display: flex;
   height: 540px; /* Altura fixa do carrossel */
-  width: 100%; 
+  width: 100%;
   margin: auto;
   position: relative;
   overflow: hidden; /* Ocultar partes das imagens que ultrapassam o tamanho */
-  
+
+  & li {
+      list-style: none;
+      position: absolute;
+      width: 100%; /* Largura das imagens ajustada ao tamanho do carrossel */
+      height: 100%;
+  }
+
+  & img {
+      margin: 0; /* Remover margens para evitar problemas de dimensionamento */
+      height: 100%;
+      width: 100%;
+      object-fit: cover; /* Manter proporções e cobrir toda a área do carrossel */
+      vertical-align: top;
+      opacity: 0;
+      visibility: hidden;
+      transition: 2s;
+  }
+
+  & input {
+      display: none;
+  }
+
+  & label {
+      background-color: #fff;
+      bottom: 1rem;
+      cursor: pointer;
+      display: flex;
+      height: 0.8rem;
+      width: 4rem;
+      position: absolute;
+      top: 97%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+  }
+
+  & li:nth-child(1) label {
+      left: 900px;
+  }
+
+  & li:nth-child(2) label {
+      left: 950px;
+  }
+
+  & li:nth-child(3) label {
+      left: 1000px;
+  }
+
+  & li input:checked ~ img {
+      opacity: 1;
+      visibility: visible;
+      z-index: 10;
+  }
+
+  & li input:checked + label {
+      background-color: var(--color-btn);
+  }
 }
 
-.slider li {
-  list-style: none;
-  position: absolute;
-  width: 100%; /* Largura das imagens ajustada ao tamanho do carrossel */
-  height: 100%; 
-}
-
-.slider img {
-  margin: 0; /* Remover margens para evitar problemas de dimensionamento */
-  height: 100%; 
-  width: 100%; 
-  object-fit: cover; /* Manter proporções e cobrir toda a área do carrossel */
-  vertical-align: top;
-}
-
-.slider input {
-  display: none;
-}
-
-.slider label {
-  background-color: #fff;
-  bottom: 1rem;
-  cursor: pointer;
-  display: block;
-  height: 0.8rem;
-  position: absolute;
-  width: 4rem;
-  z-index: 10;
-}
-
-.slider li:nth-child(1) label {
-  left: 900px;
-}
-
-.slider li:nth-child(2) label {
-  left: 950px;
-}
-
-.slider li:nth-child(3) label {
-  left: 1000px;
-}
-
-.slider img {
-  opacity: 0;
-  visibility: hidden;
-  transition: 2s;
-}
-
-.slider li input:checked ~ img {
-  opacity: 1;
-  visibility: visible;
-  z-index: 10;
-}
-.slider li input:checked + label {
-  background-color: var(--color-btn);
+.secao-baixe-app {
+  background-color: var(--main-color);
+  display: flex;
+  width: 100%;
+  height: 10rem;
 }
 
 /* MIDIA QUERY */
