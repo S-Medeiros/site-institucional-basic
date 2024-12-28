@@ -25,7 +25,12 @@ li {
 }
 
 .secao {
-  width: rem;
+  padding: 7.63rem 2rem;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
 }
 
 /* cabeçalho */
@@ -171,11 +176,44 @@ li {
   }
 }
 
+.container-baixe-app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
 .secao-baixe-app {
+  padding: 1rem;
   background-color: var(--main-color);
   display: flex;
   width: 100%;
-  height: 10rem;
+}
+
+.paragrafo-app {
+  width: 22rem;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.img-logo-app {
+  width: 10rem;
+}
+
+.botao-mascote-store{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.botao-store {
+  display: flex;
+  flex-flow: column;
+}
+
+.img-mascote-app {
+  width: 8rem;
 }
 
 /* MIDIA QUERY */
