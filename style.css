@@ -33,6 +33,15 @@ li {
   margin: 0 auto;
 }
 
+.btn {
+  padding: 1rem;
+  background-color: #E5A000;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 /* cabeçalho */
 .header {
     display: flex;
@@ -176,7 +185,7 @@ li {
   }
 }
 
-.container-baixe-app{
+.container-baixe-app {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,19 +210,53 @@ li {
   width: 10rem;
 }
 
-.botao-mascote-store{
+.botao-mascote-store {
   display: flex;
   align-items: center;
   gap: 2rem;
+
+  & .botao-store {
+      display: flex;
+      flex-flow: column;
+  }
+
+  & .img-mascote-app {
+      width: 8rem;
+  }
 }
 
-.botao-store {
+.encartes {
+  display: flex;
+  align-items: center;
+}
+
+.secao-encartes{
   display: flex;
   flex-flow: column;
+  gap: 2rem;
 }
 
-.img-mascote-app {
-  width: 8rem;
+.conteudo-encartes {
+  display: flex;
+  flex-flow: column;
+  width: 40rem;
+  gap: 1.2rem;
+}
+
+.titulo-encarte {
+  font-size: 25px;
+  color: #0A1ED8;
+  font-weight: 600;
+}
+
+.confira-encartes {
+  font-size: 32px;
+  color: #228B22;
+  font-weight: 600;
+}
+
+.encartes-frutas {
+
 }
 
 /* MIDIA QUERY */
