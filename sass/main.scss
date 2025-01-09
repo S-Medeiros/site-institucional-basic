@@ -53,11 +53,11 @@ li {
     padding: 1rem;
     background-color: var(--main-color);
     justify-content: space-around;
-    // position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 9999;
 
     & img {
     max-width: 100%;
@@ -268,8 +268,11 @@ li {
 .titulo-secao-lojas {
   font-size: 1.8rem;
   width: 3rem;
+  height: 7rem;
   color: var(--bg);
-  border-bottom: solid 2px;
+  border-left: solid 0.4rem #ffb20f;;
+  flex: 6;
+  padding: 0.52rem 0 0.52rem 2rem;
 }
 
 .estilo-titulo {
@@ -282,7 +285,6 @@ li {
 
 .conteiner-lojas {
   display: flex;
-  gap: 18rem;
 }
 
 .grupo-lojas {
