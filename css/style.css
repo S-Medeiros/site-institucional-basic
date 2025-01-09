@@ -32,6 +32,10 @@ li {
   margin: 0 auto;
 }
 
+.realce {
+  font-weight: 600;
+}
+
 .btn {
   padding: 1rem;
   background-color: #E5A000;
@@ -48,7 +52,6 @@ li {
   padding: 1rem;
   background-color: var(--main-color);
   justify-content: space-around;
-  /* position: fixed; */
   top: 0;
   left: 0;
   right: 0;
@@ -230,6 +233,58 @@ li {
   font-size: 32px;
   color: #228B22;
   font-weight: 600;
+}
+
+/* SEÇÃO NOSSAS LOJAS*/
+.titulo-secao-lojas {
+  font-size: 1.8rem;
+  width: 3rem;
+  color: var(--bg);
+  border-bottom: solid 2px;
+}
+
+.estilo-titulo {
+  font-weight: 300;
+}
+
+.secao-lojas {
+  background-color: var(--main-color);
+}
+
+.conteiner-lojas {
+  display: flex;
+  gap: 18rem;
+}
+
+.grupo-lojas {
+  display: flex;
+  gap: 4.6rem;
+}
+
+.card-loja {
+  background-color: var(--bg-card);
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  gap: 3rem;
+  padding: 2rem;
+  width: 19rem;
+  height: 23rem;
+  border: solid 1px black;
+  border-radius: 1.6rem;
+}
+
+.conteudo-card-loja {
+  line-height: 1.8;
+  font-size: 1.2rem;
+}
+
+.btn-card {
+  display: flex;
+  align-items: center;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 2rem;
 }
 
 /* MIDIA QUERY */
