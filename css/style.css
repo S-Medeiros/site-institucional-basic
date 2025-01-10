@@ -294,11 +294,37 @@ li {
 /* Footer */
 .secao-rodape {
   display: flex;
-  align-items: center;
+  gap: 10rem;
+  justify-content: center;
 }
 
 .logo-rodape {
-  width: 18rem;
+  width: 5rem;
+  height: auto;
+}
+
+.coluna-footer {
+  display: flex;
+  flex-flow: column;
+  gap: 1.4rem;
+  line-height: 1.1;
+}
+
+.coluna-footer--opcoes {
+  line-height: 1.6;
+}
+
+.titulos-footer {
+  font-size: 1.2rem;
+}
+
+.logo-redes-sociais-footer {
+  width: 5rem;
+}
+
+.logo-app-footer {
+  display: flex;
+  flex-flow: column;
 }
 
 /* MIDIA QUERY */
