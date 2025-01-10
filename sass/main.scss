@@ -304,7 +304,7 @@ li {
   width: 19rem;
   height: 23rem;
   border-radius: 1.6rem;
-  box-shadow: 0 1.2rem 0.4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.8rem 0.4rem rgba(0, 0, 0, 0.15);
 }
 
 .conteudo-card-loja {
@@ -318,8 +318,19 @@ li {
   width: 10rem;
   height: 3rem;
   border-radius: 2rem;
+  box-shadow: 0.2rem 0.8rem 0.4rem rgba(0, 0, 0, 0.15);
 }
 
+
+/* Footer */
+.secao-rodape{
+  display: flex;
+  align-items: center;
+}
+
+.logo-rodape {
+  width: 18rem;
+}
 
 /* MIDIA QUERY */
 
