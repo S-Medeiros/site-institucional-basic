@@ -296,10 +296,11 @@ li {
   display: flex;
   gap: 10rem;
   justify-content: center;
+  align-items: start;
 }
 
 .logo-rodape {
-  width: 5rem;
+  width: 18rem;
   height: auto;
 }
 
@@ -325,6 +326,13 @@ li {
 .logo-app-footer {
   display: flex;
   flex-flow: column;
+}
+
+.rodape-copyright {
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: silver;
 }
 
 /* MIDIA QUERY */
