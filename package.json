@@ -4,8 +4,8 @@
   "description": "modulo de sass",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass sass/main.scss css/style.css -w",
-    "compile:sass": "sass sass/main.scss css/style.css"
+    "watch:sass": "sass sass/main.scss assets/css/style.css -w",
+    "compile:sass": "sass sass/main.scss assets/css/style.css"
   },
   "author": "",
   "license": "ISC",
