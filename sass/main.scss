@@ -238,6 +238,7 @@ li {
 
 .secao-encartes{
   display: flex;
+  width: 50%;
   flex-flow: column;
   gap: 2rem;
 }
@@ -250,7 +251,7 @@ li {
 }
 
 .titulo-encarte {
-  font-size: 25px;
+  font-size: 26px;
   color: #0A1ED8;
   font-weight: 600;
 }
@@ -261,8 +262,13 @@ li {
   font-weight: 600;
 }
 
-.encartes-frutas {
+.btn-ofertas{
+  width: 40%;
+}
 
+.encartes-frutas {
+  display: flex;
+  justify-content: end;
 }
 
 /* SEÇÃO NOSSAS LOJAS*/
@@ -360,7 +366,7 @@ li {
 }
 
 .rodape-copyright{
-  padding: 1.2rem;
+  padding: 0.44rem;
   font-size: 1.6rem;
   text-align: center;
   background-color: silver;
