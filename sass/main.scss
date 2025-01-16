@@ -1,128 +1,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root {
-    --main-color: #387543;
-    --bg: #fff;
-    --bg-card: #8DB04A;
-    --color-btn: #E5A000;
-    /* --border: 0.1rem solid rgba(255,255,255, 0.3); */
-}
+
+@import "base/reset";
+@import "base/typography";
+@import "components/button";
+@import "layout/header.scss";
+@import "layout/footer";
+@import "pages/home";
+@import "pages/ofertas";
 
 $boxShadow: 0.1rem solid rgba(255,255,255, 0.3);
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-li {
-    list-style: none;
-}
-
-.secao {
-  padding: 7.63rem 2rem;
-}
-
-.container {
-  max-width: 100rem;
-  margin: 0 auto;
-}
-
-.realce {
-  font-weight: 600;
-}
-
-.btn {
-  padding: 1rem;
-  background-color: #E5A000;
-  border-radius: 1rem;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-/* cabeçalho */
-.header {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--main-color);
-    justify-content: space-around;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-
-    & img {
-    max-width: 100%;
-    width: 15rem;
-    }
-
-    & .itens-nav {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-    }
-
-    & .icons {
-        display: flex;
-        align-items: center;
-        color: var(--color-btn);
-    }
-    
-    & .icons div {
-      margin-left: 2rem;
-    }
-    
-    & .icons div ion-icon {
-      color: var(--color-btn);
-      cursor: pointer;
-      font-size: 2rem;
-    }
-    
-    & .icons div ion-icon:hover {
-      color: #fff;
-    }
-
-    & #menu-btn {
-        display: none;
-      }
-
-    & .navbar {
-        display: flex;
-        gap: 20rem;
-        font-size: 1.8rem;
-        font-weight: 600;
-    
-        & a {
-        color: #fff;
-        text-decoration: none;
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-        transition: background-color 0.3s, color 0.3s;
-        }
-    
-        & a:hover{
-        color: #fff;
-        background-color: var(--color-btn);
-        font-size: 1.8rem;
-        text-decoration: none;
-        }
-    
-        & li {
-        display: flex;
-        gap: 2rem;
-        } 
-    }
-}
+$main-color: #387543;
+$bg: #fff;
+$bg-card: #8DB04A;
+$color-btn: #E5A000;
 
 .slider {
   display: flex;
@@ -155,7 +47,7 @@ li {
   }
 
   & label {
-      background-color: #fff;
+      background-color: $bg;
       bottom: 1rem;
       cursor: pointer;
       display: flex;
@@ -187,7 +79,7 @@ li {
   }
 
   & li input:checked + label {
-      background-color: var(--color-btn);
+      background-color: $color-btn;
   }
 }
 
@@ -200,7 +92,7 @@ li {
 
 .secao-baixe-app {
   padding: 1rem;
-  background-color: var(--main-color);
+  background-color: $main-color;
   display: flex;
   width: 100%;
 }
@@ -238,6 +130,7 @@ li {
 
 .secao-encartes{
   display: flex;
+  width: 50%;
   flex-flow: column;
   gap: 2rem;
 }
@@ -250,7 +143,7 @@ li {
 }
 
 .titulo-encarte {
-  font-size: 25px;
+  font-size: 26px;
   color: #0A1ED8;
   font-weight: 600;
 }
@@ -261,8 +154,13 @@ li {
   font-weight: 600;
 }
 
-.encartes-frutas {
+.btn-ofertas{
+  width: 40%;
+}
 
+.encartes-frutas {
+  display: flex;
+  justify-content: end;
 }
 
 /* SEÇÃO NOSSAS LOJAS*/
@@ -271,7 +169,7 @@ li {
   font-size: 1.8rem;
   width: 3rem;
   height: 7rem;
-  color: var(--bg);
+  color: $bg;
   border-left: solid 0.4rem #ffb20f;;
   flex: 6;
   padding: 0.52rem 0 0.52rem 2rem;
@@ -282,7 +180,7 @@ li {
 }
 
 .secao-lojas{
-  background-color: var(--main-color);
+  background-color: $main-color;
 }
 
 .conteiner-lojas {
@@ -295,7 +193,7 @@ li {
 }
 
 .card-loja {
-  background-color: var(--bg-card);
+  background-color: $bg-card;
   display: flex;
   align-items: center;
   flex-flow: column;
@@ -319,51 +217,6 @@ li {
   height: 3rem;
   border-radius: 2rem;
   box-shadow: 0.2rem 0.8rem 0.4rem rgba(0, 0, 0, 0.15);
-}
-
-
-/* Footer */
-.secao-rodape{
-  display: flex;
-  gap: 10rem;
-  justify-content: center;
-  align-items: start;
-}
-
-.logo-rodape {
-  width: 18rem;
-  height: auto;
-}
-
-.coluna-footer {
-  display: flex;
-  flex-flow: column;
-  gap: 1.4rem;
-  line-height: 1.1;
-}
-
-.coluna-footer--opcoes {
-  line-height: 1.6;
-}
-
-.titulos-footer {
-  font-size: 1.2rem;
-}
-
-.logo-redes-sociais-footer {
-  width: 5rem;
-}
-
-.logo-app-footer {
-  display: flex;
-  flex-flow: column;
-}
-
-.rodape-copyright{
-  padding: 1.2rem;
-  font-size: 1.6rem;
-  text-align: center;
-  background-color: silver;
 }
 
 /* MIDIA QUERY */
@@ -397,7 +250,7 @@ li {
   }
 
   .header .navbar a {
-    color: var(--bg-card);
+    color: var$bg-card;
     display: block;
     margin: 1.5rem;
     padding: 0.5rem;

@@ -1,0 +1,48 @@
+@import "../base/variables";
+@import "../base/reset";
+@import "../base/typography";
+
+/* Footer */
+.secao-rodape{
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    align-items: start;
+  }
+  
+  .logo-rodape {
+    width: 18rem;
+    height: auto;
+  }
+  
+  .coluna-footer {
+    display: flex;
+    flex-flow: column;
+    gap: 1.4rem;
+    line-height: 1.1;
+  }
+  
+  .coluna-footer--opcoes {
+    line-height: 1.6;
+  }
+  
+  .titulos-footer {
+    font-size: 1.2rem;
+  }
+  
+  .logo-redes-sociais-footer {
+    width: 5rem;
+  }
+  
+  .logo-app-footer {
+    display: flex;
+    flex-flow: column;
+  }
+  
+  .rodape-copyright{
+    padding: 0.44rem;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: silver;
+  }
+  

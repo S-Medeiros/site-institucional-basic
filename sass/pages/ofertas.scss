@@ -1,0 +1,18 @@
+@import "../base/variables";
+@import "../base/reset";
+@import "../base/typography";
+
+
+.secao-encarte {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.titulo-secao-encarte {
+    font-size: 3.2rem;
+}
+
+.encarte {
+    width: 5rem;
+}
