@@ -8,24 +8,13 @@
 @import "layout/header.scss";
 @import "layout/footer";
 @import "pages/home";
-
-// :root {
-//     --main-color: #387543;
-//     --bg: #fff;
-//     --bg-card: #8DB04A;
-//     --color-btn: #E5A000;
-//     --border: 0.1rem solid rgba(255,255,255, 0.3);
-// }
+@import "pages/ofertas";
 
 $boxShadow: 0.1rem solid rgba(255,255,255, 0.3);
 $main-color: #387543;
 $bg: #fff;
 $bg-card: #8DB04A;
 $color-btn: #E5A000;
-
-.realce {
-  font-weight: 600;
-}
 
 .slider {
   display: flex;
