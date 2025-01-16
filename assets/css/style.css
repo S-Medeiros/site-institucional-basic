@@ -1,13 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-:root {
-  --main-color: #387543;
-  --bg: #fff;
-  --bg-card: #8DB04A;
-  --color-btn: #E5A000;
-  /* --border: 0.1rem solid rgba(255,255,255, 0.3); */
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -32,10 +24,6 @@ li {
   margin: 0 auto;
 }
 
-.realce {
-  font-weight: 600;
-}
-
 .btn {
   padding: 1rem;
   background-color: #E5A000;
@@ -50,7 +38,7 @@ li {
   display: flex;
   align-items: center;
   padding: 1rem;
-  background-color: var(--main-color);
+  background-color: #387543;
   justify-content: space-around;
   position: sticky;
   top: 0;
@@ -70,13 +58,13 @@ li {
 .header .icons {
   display: flex;
   align-items: center;
-  color: var(--color-btn);
+  color: #E5A000;
 }
 .header .icons div {
   margin-left: 2rem;
 }
 .header .icons div ion-icon {
-  color: var(--color-btn);
+  color: #E5A000;
   cursor: pointer;
   font-size: 2rem;
 }
@@ -101,13 +89,61 @@ li {
 }
 .header .navbar a:hover {
   color: #fff;
-  background-color: var(--color-btn);
+  background-color: #E5A000;
   font-size: 1.8rem;
   text-decoration: none;
 }
 .header .navbar li {
   display: flex;
   gap: 2rem;
+}
+
+/* Footer */
+.secao-rodape {
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  align-items: start;
+}
+
+.logo-rodape {
+  width: 18rem;
+  height: auto;
+}
+
+.coluna-footer {
+  display: flex;
+  flex-flow: column;
+  gap: 1.4rem;
+  line-height: 1.1;
+}
+
+.coluna-footer--opcoes {
+  line-height: 1.6;
+}
+
+.titulos-footer {
+  font-size: 1.2rem;
+}
+
+.logo-redes-sociais-footer {
+  width: 5rem;
+}
+
+.logo-app-footer {
+  display: flex;
+  flex-flow: column;
+}
+
+.rodape-copyright {
+  padding: 0.44rem;
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: silver;
+}
+
+.realce {
+  font-weight: 600;
 }
 
 .slider {
@@ -165,7 +201,7 @@ li {
   z-index: 10;
 }
 .slider li input:checked + label {
-  background-color: var(--color-btn);
+  background-color: #E5A000;
 }
 
 .container-baixe-app {
@@ -177,7 +213,7 @@ li {
 
 .secao-baixe-app {
   padding: 1rem;
-  background-color: var(--main-color);
+  background-color: #387543;
   display: flex;
   width: 100%;
 }
@@ -251,7 +287,7 @@ li {
   font-size: 1.8rem;
   width: 3rem;
   height: 7rem;
-  color: var(--bg);
+  color: #fff;
   border-left: solid 0.4rem #ffb20f;
   flex: 6;
   padding: 0.52rem 0 0.52rem 2rem;
@@ -262,7 +298,7 @@ li {
 }
 
 .secao-lojas {
-  background-color: var(--main-color);
+  background-color: #387543;
 }
 
 .conteiner-lojas {
@@ -275,7 +311,7 @@ li {
 }
 
 .card-loja {
-  background-color: var(--bg-card);
+  background-color: #8DB04A;
   display: flex;
   align-items: center;
   flex-flow: column;
@@ -299,50 +335,6 @@ li {
   height: 3rem;
   border-radius: 2rem;
   box-shadow: 0.2rem 0.8rem 0.4rem rgba(0, 0, 0, 0.15);
-}
-
-/* Footer */
-.secao-rodape {
-  display: flex;
-  gap: 10rem;
-  justify-content: center;
-  align-items: start;
-}
-
-.logo-rodape {
-  width: 18rem;
-  height: auto;
-}
-
-.coluna-footer {
-  display: flex;
-  flex-flow: column;
-  gap: 1.4rem;
-  line-height: 1.1;
-}
-
-.coluna-footer--opcoes {
-  line-height: 1.6;
-}
-
-.titulos-footer {
-  font-size: 1.2rem;
-}
-
-.logo-redes-sociais-footer {
-  width: 5rem;
-}
-
-.logo-app-footer {
-  display: flex;
-  flex-flow: column;
-}
-
-.rodape-copyright {
-  padding: 0.44rem;
-  font-size: 1.6rem;
-  text-align: center;
-  background-color: silver;
 }
 
 /* MIDIA QUERY */
@@ -370,7 +362,7 @@ li {
     height: calc(100vh - 9.5rem);
   }
   .header .navbar a {
-    color: var(--bg-card);
+    color: var #8DB04A;
     display: block;
     margin: 1.5rem;
     padding: 0.5rem;

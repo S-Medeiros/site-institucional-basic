@@ -1,0 +1,78 @@
+@import "../base/variables";
+
+/* cabeçalho */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: $main-color;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+
+    & img {
+    max-width: 100%;
+    width: 15rem;
+    }
+
+    & .itens-nav {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    & .icons {
+        display: flex;
+        align-items: center;
+        color: $color-btn;
+    }
+    
+    & .icons div {
+      margin-left: 2rem;
+    }
+    
+    & .icons div ion-icon {
+      color: $color-btn;
+      cursor: pointer;
+      font-size: 2rem;
+    }
+    
+    & .icons div ion-icon:hover {
+      color: $bg;
+    }
+
+    & #menu-btn {
+        display: none;
+      }
+
+    & .navbar {
+        display: flex;
+        gap: 20rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+    
+        & a {
+        color: $bg;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+        }
+    
+        & a:hover{
+        color: $bg;
+        background-color: $color-btn
+        ;
+        font-size: 1.8rem;
+        text-decoration: none;
+        }
+    
+        & li {
+        display: flex;
+        gap: 2rem;
+        } 
+    }
+}
