@@ -264,6 +264,26 @@ a {
   font-weight: 600;
 }
 
+.secao-sobre-nos {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.titulo-secao-nossa-historia {
+  color: #228B22;
+  font-size: 3.2rem;
+}
+
+.conteudo-sobre-nos {
+  display: flex;
+  flex-flow: column;
+  gap: 3rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+
 .slider {
   display: flex;
   height: 540px; /* Altura fixa do carrossel */
