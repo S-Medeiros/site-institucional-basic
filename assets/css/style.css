@@ -215,18 +215,53 @@ a {
   font-weight: 600;
 }
 
-.secao-encarte {
+.secao-encartes {
   display: flex;
   flex-flow: column;
   justify-content: center;
+  width: 100%;
+  gap: 2.5rem;
 }
-
-.titulo-secao-encarte {
+.secao-encartes .titulo-secao-encarte {
+  color: #228B22;
   font-size: 3.2rem;
 }
+.secao-encartes .encarte {
+  display: flex;
+  flex-flow: column;
+  gap: 2.5rem;
+}
 
-.encarte {
-  width: 5rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.secao {
+  padding: 7.63rem 2rem;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.realce {
+  font-weight: 600;
 }
 
 .slider {
