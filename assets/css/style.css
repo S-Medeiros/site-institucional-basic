@@ -345,7 +345,7 @@ a {
 }
 .grid-nossas-lojas .card-loja--secao-lojas img {
   width: 100%;
-  height: 50%;
+  height: auto;
   border-radius: 2rem;
   object-fit: cover;
 }
