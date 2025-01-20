@@ -1,0 +1,78 @@
+@import "../base/variables";
+@import "../base/reset";
+@import "../base/typography";
+
+
+.tituloh1-secao-lojas {
+    color: $color-font;
+    font-size: 3.2rem;
+    text-align: center;
+}
+.conteiner-secao-lojas {
+  display: flex;
+  flex-flow: column;
+  gap: 5rem;
+}
+
+.grid-nossas-lojas {
+    display: flex;
+    flex-wrap: wrap; // Permite que os elementos se ajustem em telas menores
+    gap: 2rem; // Espaço entre os itens
+    justify-content: center;
+  
+    .card-loja--secao-lojas {
+      background-color: $main-color;
+      padding: 2rem;
+      width: 100%; // Adapte para flexibilidade
+      max-width: 50.37rem;
+      height: auto;
+      border-radius: 2rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 2rem;
+        object-fit: cover;
+      }
+    }
+  
+    .endereco--secao-lojas {
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem; // Adicione estilos conforme necessário
+      color: $bg;
+    }
+
+    .rodape-card-loja {
+        display: flex;
+        flex-flow: column;
+        gap: 2rem;
+        
+        ion-icon{
+            font-size: 3rem;
+            color: $color-btn;
+        }
+
+        .rodape-loja {
+            font-size: 2rem;
+        }
+    }
+  
+    .btn--secao-lojas {
+      width: auto; // Adapte à largura do conteúdo
+      min-width: 10rem; // Defina um mínimo para consistência
+      height: auto;
+      padding: 0.8rem 1.6rem; // Controle o tamanho do botão
+      font-size: 1.6rem;
+      text-align: center;
+      background-color: $color-btn;
+      color: $bg;
+      border-radius: 1rem;
+  
+      &:hover {
+        background-color: darken($color-btn, 10%);
+      }
+    }
+  }
+  

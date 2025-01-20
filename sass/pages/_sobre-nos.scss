@@ -1,0 +1,23 @@
+@import "../base/variables";
+@import "../base/reset";
+@import "../base/typography";
+
+.secao-sobre-nos {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.titulo-secao-nossa-historia {
+    color: $color-font;
+    font-size: 3.2rem;
+}
+
+.conteudo-sobre-nos {
+    display: flex;
+    flex-flow: column;
+    gap: 3rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
+}

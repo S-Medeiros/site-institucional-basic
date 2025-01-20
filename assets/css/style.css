@@ -215,18 +215,171 @@ a {
   font-weight: 600;
 }
 
-.secao-encarte {
+.secao-encartes {
   display: flex;
   flex-flow: column;
   justify-content: center;
+  width: 100%;
+  gap: 2.5rem;
+}
+.secao-encartes .titulo-secao-encarte {
+  color: #228B22;
+  font-size: 3.2rem;
+}
+.secao-encartes .encarte {
+  display: flex;
+  flex-flow: column;
+  gap: 2.5rem;
 }
 
-.titulo-secao-encarte {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.secao {
+  padding: 7.63rem 2rem;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.realce {
+  font-weight: 600;
+}
+
+.secao-sobre-nos {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.titulo-secao-nossa-historia {
+  color: #228B22;
   font-size: 3.2rem;
 }
 
-.encarte {
-  width: 5rem;
+.conteudo-sobre-nos {
+  display: flex;
+  flex-flow: column;
+  gap: 3rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.secao {
+  padding: 7.63rem 2rem;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.realce {
+  font-weight: 600;
+}
+
+.tituloh1-secao-lojas {
+  color: #228B22;
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.conteiner-secao-lojas {
+  display: flex;
+  flex-flow: column;
+  gap: 5rem;
+}
+
+.grid-nossas-lojas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.grid-nossas-lojas .card-loja--secao-lojas {
+  background-color: #387543;
+  padding: 2rem;
+  width: 100%;
+  max-width: 50.37rem;
+  height: auto;
+  border-radius: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.grid-nossas-lojas .card-loja--secao-lojas img {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+.grid-nossas-lojas .endereco--secao-lojas {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  color: #fff;
+}
+.grid-nossas-lojas .rodape-card-loja {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+.grid-nossas-lojas .rodape-card-loja ion-icon {
+  font-size: 3rem;
+  color: #E5A000;
+}
+.grid-nossas-lojas .rodape-card-loja .rodape-loja {
+  font-size: 2rem;
+}
+.grid-nossas-lojas .btn--secao-lojas {
+  width: auto;
+  min-width: 10rem;
+  height: auto;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: #E5A000;
+  color: #fff;
+  border-radius: 1rem;
+}
+.grid-nossas-lojas .btn--secao-lojas:hover {
+  background-color: rgb(178, 124.3668122271, 0);
 }
 
 .slider {
@@ -454,7 +607,7 @@ a {
 }
 @media (max-width: 768px) and (max-width: 768px) {
   #menu-btn {
-    display: inline-block;
+    display: inline;
   }
 }
 

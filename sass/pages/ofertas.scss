@@ -3,16 +3,25 @@
 @import "../base/typography";
 
 
-.secao-encarte {
+.secao-encartes {
     display: flex;
     flex-flow: column;
     justify-content: center;
+    width: 100%;
+    gap: 2.5rem;
+
+    & .titulo-secao-encarte {
+        color: $color-font;
+        font-size: 3.2rem;
+    }
+
+    & .encarte {
+        display: flex;
+        flex-flow: column;
+        gap: 2.5rem;
+    }
 }
 
-.titulo-secao-encarte {
-    font-size: 3.2rem;
-}
 
-.encarte {
-    width: 5rem;
-}
+
+
