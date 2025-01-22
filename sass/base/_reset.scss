@@ -17,15 +17,34 @@ a {
     text-decoration: none;
 }
 
+// Responsividade para .secao
 .secao {
-    padding: 7.63rem 2rem;
-  }
-  
+  padding: 7.63rem 2rem;
+}
+
+// Responsividade para .container
 .container {
   max-width: 100rem;
   margin: 0 auto;
 }
 
-.realce {
-    font-weight: 600;
+// Ajustes para telas menores
+@media (max-width: 768px) {
+  .secao {
+    padding: 5rem 1.5rem; 
   }
+  
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .secao {
+    padding: 3rem 1rem; 
+  }
+
+  .container {
+    max-width: 95%; 
+  }
+}

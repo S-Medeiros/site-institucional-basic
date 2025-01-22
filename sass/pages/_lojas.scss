@@ -2,36 +2,43 @@
 @import "../base/reset";
 @import "../base/typography";
 
-
-.tituloh1-secao-lojas {
-    color: $color-font;
-    font-size: 3.2rem;
-    text-align: center;
-}
 .conteiner-secao-lojas {
+  width: 100rem;
   display: flex;
   flex-flow: column;
   gap: 5rem;
 }
 
+.tituloh1-secao-lojas {
+    color: $color-font;
+    font-size: 3.2rem;
+}
+
 .grid-nossas-lojas {
-    display: flex;
-    flex-wrap: wrap; // Permite que os elementos se ajustem em telas menores
-    gap: 2rem; // Espaço entre os itens
+    width: auto;
+    display: grid;
+    align-items: center;
     justify-content: center;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2.6rem;
   
     .card-loja--secao-lojas {
+      display: flex;
+      flex-flow: column;
+      gap: 1rem;
       background-color: $main-color;
       padding: 2rem;
       width: 100%; // Adapte para flexibilidade
       max-width: 50.37rem;
       height: auto;
       border-radius: 2rem;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
   
       img {
         width: 100%;
-        height: auto;
+        max-width: 50rem;
+        height: 20rem;
         border-radius: 2rem;
         object-fit: cover;
       }
@@ -47,6 +54,7 @@
     .rodape-card-loja {
         display: flex;
         flex-flow: column;
+        align-items: center;
         gap: 2rem;
         
         ion-icon{
@@ -55,13 +63,13 @@
         }
 
         .rodape-loja {
-            font-size: 2rem;
+            font-size: 1.6rem;
         }
     }
   
     .btn--secao-lojas {
-      width: auto; // Adapte à largura do conteúdo
-      min-width: 10rem; // Defina um mínimo para consistência
+      width: 30rem; // Adapte à largura do conteúdo
+      max-width: 350rem; // Defina um mínimo para consistência
       height: auto;
       padding: 0.8rem 1.6rem; // Controle o tamanho do botão
       font-size: 1.6rem;
