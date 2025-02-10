@@ -9,6 +9,10 @@
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
+
+    &:hover {
+      background-color: darken($color-btn, 10%);
   }
+}
 
   
