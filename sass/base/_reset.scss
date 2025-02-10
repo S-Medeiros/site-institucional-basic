@@ -22,13 +22,11 @@ a {
   padding: 7.63rem 2rem;
 }
 
-// Responsividade para .container
 .container {
   max-width: 100rem;
   margin: 0 auto;
 }
 
-// Ajustes para telas menores
 @media (max-width: 768px) {
   .secao {
     padding: 5rem 1.5rem; 

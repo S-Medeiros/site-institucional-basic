@@ -53,6 +53,9 @@ a {
   font-weight: 500;
   cursor: pointer;
 }
+.btn:hover {
+  background-color: rgb(178, 124.3668122271, 0);
+}
 
 /* cabeçalho */
 .header {
@@ -377,7 +380,7 @@ a {
   }
 }
 .conteiner-secao-lojas {
-  width: 100rem;
+  max-width: 100rem;
   display: flex;
   flex-flow: column;
   gap: 5rem;
@@ -389,13 +392,14 @@ a {
 }
 
 .grid-nossas-lojas {
-  width: auto;
+  max-width: 300rem;
   display: grid;
   align-items: center;
+  align-content: center;
   justify-content: center;
   grid-auto-flow: column;
   grid-template-rows: repeat(2, 1fr);
-  gap: 2.6rem;
+  gap: 6rem;
 }
 .grid-nossas-lojas .card-loja--secao-lojas {
   display: flex;
@@ -640,6 +644,9 @@ a {
   border-radius: 2rem;
   box-shadow: 0.2rem 0.8rem 0.4rem rgba(0, 0, 0, 0.15);
 }
+.btn-card:hover {
+  background-color: rgb(178, 124.3668122271, 0);
+}
 
 /* MIDIA QUERY */
 @media (max-width: 991px) {
@@ -673,9 +680,41 @@ a {
     font-size: 2rem;
   }
 }
-@media (max-width: 768px) and (max-width: 768px) {
+
+@media (max-width: 768px) {
   #menu-btn {
-    display: inline;
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: #fff;
+    width: 30rem;
+    height: calc(100vh - 9.5rem);
+  }
+
+  .header .navbar a {
+    color: var(--bg-card);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .home {
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home .content h3 {
+    font-size: 4.5rem;
+  }
+
+  .home .content p {
+    font-size: 1.5rem;
   }
 }
 

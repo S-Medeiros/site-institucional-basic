@@ -3,7 +3,7 @@
 @import "../base/typography";
 
 .conteiner-secao-lojas {
-  width: 100rem;
+  max-width: 100rem;
   display: flex;
   flex-flow: column;
   gap: 5rem;
@@ -15,13 +15,14 @@
 }
 
 .grid-nossas-lojas {
-    width: auto;
+    max-width: 300rem;
     display: grid;
     align-items: center;
+    align-content: center;
     justify-content: center;
     grid-auto-flow: column;
     grid-template-rows: repeat(2, 1fr);
-    gap: 2.6rem;
+    gap: 6rem;
   
     .card-loja--secao-lojas {
       display: flex;
